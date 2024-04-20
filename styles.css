@@ -59,48 +59,163 @@ h4 {
 }
 /*Estilos de la seccion introduccion*/
 
-
 .introduccion-box-elden-ring{
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .introduccion-title{
-  display: flex;
   color: #c4a263;
   font-family: "eldenFont";
   letter-spacing: 0.5px;
   line-height: 25px;
-  position: relative;
+  position: absolute;
   font-size: 100px;
   bottom: 900px;
   left: 684px;
   font-weight: normal;
 }
 .introduccion-box-elden-ring p{
-  
   font-weight: normal;
-  position: relative;
-  width: 681px;
-  bottom: 400px;
-  left: 633px;
+  position: absolute;
+  width: 560px;
+  bottom: 270px;
+  left: 665px;
   color: white;
   font-size: 17px;
 }
 .introduccion-fogata{
-  display: flex;
-  position: relative;
+  position: absolute;
   width: 200px;
   height: 200px;
-  bottom: 350px;
+  bottom: 100px;
   left: 800px;
 
 }
 .introduccion-personaje{
   display: flex;
-  position: relative;
+  position: absolute;
   width: 140px;
   height: 140px;
-  bottom: 500px;
+  bottom: 100px;
   left: 900px;
 
+}
+/*Estilos de la seccion carracteristicas*/
+.principal-features{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  bottom: 1px;
+  height: 2500px;
+}
+.principal-features p{
+  color: white;
+}
+.principal-features-imagen{
+  position: absolute;
+}
+
+/*-------->Estilos de la seccion carracteristicas universo de fantasía*/
+.principal-features-fantasy{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.principal-features-fantasy h2{
+  position: absolute;
+  left: 1115px;
+  top: 80px;
+
+}
+.principal-features-fantasy p{
+  position: absolute;
+  width: 500px;
+  left: 1000px;
+  top: 120px;
+}
+.principal-features-fantasy video{
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  left: 200px;
+}
+
+/*-------->Estilos de la seccion carracteristicas de exploracion*/
+.principal-features-exploracion{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.principal-features-exploracion h2{
+  position: absolute;
+  top: 600px;
+  left: 300px;
+
+}
+.principal-features-exploracion p{
+  position: absolute;
+  top: 650px;
+  width: 500px;
+  left: 300px;
+
+}
+.principal-features-exploracion video{
+  width: 650px;
+  height: 650px;
+  top: 500px;
+  left: 1000px;
+
+  position: absolute;
+}
+
+/*-------->Estilos de la seccion carracteristicas nivel*/
+.principal-features-level{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 1000px;
+}
+.principal-features-level h2{
+  position: absolute;
+  top: 70px;
+  left: 1170px;
+  font-size: 30px;
+
+}
+.principal-features-level p{
+  position: absolute;
+  top: 120px;
+  left: 1030px;
+  width: 500px;
+
+
+}.principal-features-level video{
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  left: 200px;
+
+}
+
+/*-------->Estilos de la seccion carracteristicas souls like*/
+.principal-features-souls-like{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 1800px;
+  left: 200px;
+}
+.principal-features-souls-like h2{
+  position: absolute;
+}
+.principal-features-souls-like p{
+  position: absolute;
+  width: 500px;
+
+}
+.principal-features-souls-like video{
+  position: absolute;
+  width: 150px;
+  height: 150px;
 }
