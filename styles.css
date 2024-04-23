@@ -107,7 +107,7 @@ h4 {
   display: flex;
   flex-direction: column;
   bottom: 1px;
-  height: 2500px;
+  height: 2300px;
 }
 .principal-features p{
   color: white;
@@ -203,19 +203,131 @@ h4 {
   position: relative;
   display: flex;
   flex-direction: column;
-  top: 1800px;
-  left: 200px;
+  top: 1600px;
+  left: 800px;
 }
-.principal-features-souls-like h2{
+.principal-features-souls-like-title{
   position: absolute;
+  bottom: 30px;
+  font-size: 30px;
+  left: -55px;
+
+  
 }
-.principal-features-souls-like p{
+.principal-features-souls-like-text{
   position: absolute;
-  width: 500px;
+  left: -101px;
+  font-size: 18px;
+  width: 454px;
+  font-weight: bold;
+  text-align: center;
+  bottom: -57px;
 
 }
-.principal-features-souls-like video{
-  position: absolute;
-  width: 150px;
-  height: 150px;
+/*--------------------------->souls like ---->level*/
+.souls-like-level{
+  position: relative;
+  top: 150px;
+
 }
+.souls-like-level h3{
+  position: absolute;
+  left: -730px;
+  bottom: 20px;
+  font-size: 23px;
+}
+.souls-like-level p{
+  position: absolute;
+  left: -730px;
+  width: 350px;
+}
+.souls-like-level img{
+  position: absolute;
+  left: -730px;
+  width: 350px;
+  height: 250px;
+  top: 200px;
+}
+/*--------------------------->souls like ---->narrativa*/
+.souls-like-environmental-narrative{
+  position: relative;
+  left: -180px;
+  top: 150px;
+}
+
+.souls-like-environmental-narrative h3{
+  position: absolute;
+  left: -100px;
+  bottom: 20px;
+  font-size: 23px;
+}
+
+.souls-like-environmental-narrative p{
+  position: absolute;
+  width: 350px;
+  left: -100px;
+}
+.souls-like-environmental-narrative img{
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  left: -100px;
+  top: 200px;
+
+}
+/*--------------------------->souls like ---->mejora de personaje*/
+
+.souls-like-character-upgrade{
+  top: 150px;
+  left: -150px;
+  position: relative;
+}
+
+.souls-like-character-upgrade h3{
+  position: absolute;
+  left: 300px;
+  bottom: 20px;
+  font-size: 23px;
+}
+
+.souls-like-character-upgrade p{
+  position: absolute;
+  width: 350px;
+  left: 300px;
+
+}
+.souls-like-character-upgrade img{
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  left: 300px;
+  top: 200px;
+
+}
+/*--------------------------->souls like ---->combate metodico*/
+.Methodical-Combat{
+  position: relative;
+  top: 150px;
+  left: -100px;
+}
+
+.Methodical-Combat h3{
+  position: absolute;
+  left: 700px;
+  bottom: 20px;
+  font-size: 23px;
+}
+
+.Methodical-Combat p{
+  position: absolute;
+  left: 700px;
+  width: 350px;
+}
+.Methodical-Combat img{
+  position: absolute;
+  left: 700px;
+  width: 350px;
+  height: 250px;
+  top: 200px;
+}
+
