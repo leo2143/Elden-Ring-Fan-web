@@ -331,3 +331,29 @@ h4 {
   top: 200px;
 }
 
+/*Section Historia*/
+.section-history{
+  position: relative;
+}
+.section-history-wall{
+  position: absolute;
+}
+.history-title{
+  position: absolute;
+}
+.history-box{
+  gap: 21px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 1300px;
+  align-items: center;
+}
+.history-box p{
+  position: relative;
+  color: white;
+  top: 210px;
+  left: 260px;
+  text-align: center;
+}
+
