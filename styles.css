@@ -27,6 +27,8 @@ main {
   flex-direction: column;
   font-family: "Metropolis", "Gotham", Helvetica "Neue", Helvetica, Arial,
     sans-serif;
+    color: white;
+
   font-size: 17px;
   letter-spacing: 0.5px;
   line-height: 25px;
@@ -40,6 +42,8 @@ h4 {
   font-family: "eldenFont";
   letter-spacing: 0.5px;
   line-height: 25px;
+}
+p{
 }
 /*Estilos del Nav*/
 .header-nav {
@@ -348,13 +352,17 @@ h4 {
   position: relative;
   display: flex;
   flex-direction: column;
+  background-image: url(Fondos/elden-ring-characters-gallery-background.webp);
+  background-attachment:fixed ;
 }
 .clases-box-heroe {
   position: relative;
-/* }
+}
+
+/* 
 .clases-box-bandido {
   position: absolute;
-} */
+} */ */
 /* 
 .clases-box-astrologo {
   position: absolute;
