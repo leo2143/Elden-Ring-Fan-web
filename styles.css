@@ -9,29 +9,6 @@
   padding: 0;
   margin: 0;
 }
-header {
-  position: fixed;
-  align-content: center;
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  font-family: "eldenFont";
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  background: #010c0d;
-  z-index: 1;
-}
-main {
-  font-family: "Metropolis", "Gotham", Helvetica "Neue", Helvetica, Arial,
-    sans-serif;
-  color: white;
-  max-width: 1920px;
-  font-size: 17px;
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  z-index: 2;
-  overflow-x: hidden;
-}
 h2,
 h3,
 h4 {
@@ -47,9 +24,47 @@ p {
 strong {
   color: #c4a263;
 }
+/* estilos del header */
+header {
+  max-width: 1920px;
+  max-height: 900px;
+}
+header img {
+  max-width: 1903px;
+  height: 800px;
+  padding-top: 40px;
+}
+.header-start-adventure {
+  background-color: #010c0d;
+  margin-top: -4px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 26px;
+  height: 60px;
+  align-content: center;
+}
+.header-start-adventure a {
+  margin-left: 33px;
+  color: #c4a263;
+  text-decoration: none;
+}
+.header-start-adventure a:hover {
+  color: #ffd586;
+}
 /*Estilos del Nav*/
 .header-nav {
+  position: fixed;
+  align-content: center;
+  height: 60px;
+  width: 1920px;
+  margin: 0;
+  font-family: "eldenFont";
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  background: #010c0d;
+  z-index: 1;
   text-indent: 10px;
+  width: 100%;
 }
 .header-nav a {
   font-size: 20px;
@@ -59,6 +74,15 @@ strong {
 }
 .header-nav a:hover {
   color: white;
+}
+
+main {
+  color: white;
+  max-width: 1920px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  overflow: hidden;
 }
 /*-------------------Estilos de la seccion introduccion------------------*/
 .introduccion-box-elden-ring {
@@ -76,14 +100,17 @@ strong {
   padding-top: 90px;
   filter: drop-shadow();
 }
-.introduccion-box-elden-ring p {
-  width: 823px;
-  padding-top: 400px;
-  padding-left: 533px;
+.introduccion-box-text{
+  width: 1200px;
+  padding-top: 360px;
+  padding-left: 370px;
   font-size: 19px;
   font-weight: normal;
   text-align: center;
-  color: white;
+}
+.introduccion-box-elden-ring p {
+  padding-bottom: 15px;
+
 }
 /*----------Estilos de la seccion carracteristicas--------------------*/
 .section-principal-features {
@@ -304,9 +331,7 @@ strong {
   background-image: url(Fondos/fondo-seccion-historia.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1920px;
-  height: 1080px;
-
+  max-width: 1920px;
   text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -316,13 +341,27 @@ strong {
   text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
   margin-left: 900px;
 }
+
 .history-box {
   width: 1300px;
   align-content: center;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-left: 300px;
+  padding-bottom: 90px;
 }
+/* estilos de los gifs utilizados en la seccion */
+.history-box-caballero {
+  float: left;
+  width: 100px;
+}
+.history-box-text-whit-caballero {
+  float: right;
+  width: 150px;
+}
+
+/*estilo de los parafos dentro del contenedor*/
+
 .history-box p {
   color: white;
   font-size: 17px;
@@ -330,20 +369,20 @@ strong {
   text-align: center;
   text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
 }
-/*/*----------------------seccion clases------------------- */
+/*----------------------seccion clases------------------- */
 .section-classes {
-  min-width: 1920px;
+  max-width: 1920px;
   position: relative;
   background-image: url(Fondos/fondo-diosa.jpg);
   background-attachment: fixed;
   text-align: center;
 }
-.section-classes ol,
+.section-classes ul,
 li {
   text-decoration: none;
   list-style: none;
 }
-.section-classes ol {
+.section-classes ul {
   padding-bottom: 60px;
 }
 .classes-title {
@@ -411,8 +450,8 @@ li {
 
 /* -------------------secccion los sin luz------------------------------- */
 .section-sinluz {
-  min-width: 1920px;
-  min-height: 1200px;
+  max-width: 1920px;
+  max-height: 1200px;
   text-align: center;
   background-image: url(Fondos/fondo-fuego.webp);
   background-repeat: no-repeat;

@@ -16,12 +16,20 @@
   <body>
     <header>
       <nav class="header-nav">
-        <a href="#section-introduccion">Elden rinG</a>
+        <a href="#section-introduccion">Introduccion</a>
         <a href="#section-principal-features">Caracteristicas principales</a>
         <a href="#section-history">Historia</a>
         <a href="#section-classes">Clases</a>
         <a href="#section-sinluz">Los Sinluz</a>
       </nav>
+      <img
+        src="fondos/señor-del-circulo.jpg"
+        alt="banner del señor del circulo"
+      />
+
+      <div class="header-start-adventure">
+        <a href="#section-introduccion">Iniciar aventura</a>
+      </div>
     </header>
     <main>
       <section id="section-introduccion" class="introduccion-box-elden-ring">
@@ -31,17 +39,33 @@
           src="imagenes-utiles/titulo-elden-ring.png"
           alt="titulo del juego elden ring"
         />
-        <p>
-          <strong lang="en">Elden Ring</strong> es un videojuego que promete ser
-          una experiencia inmersiva y emocionante, llevando a los jugadores a un
-          viaje a través de un mundo lleno de misterio y peligro. La combinación
-          del talento de <strong lang="ja">Hidetaka Miyazaki</strong> y
-          <strong lang="en">George R. R. Martin</strong> crea una expectativa
-          sin precedentes en la comunidad de jugadores y aficionados a la
-          fantasía. Con su lanzamiento muy esperado, Elden Ring está destinado a
-          dejar una marca indeleble en la industria del videojuego y en la
-          imaginación de quienes se aventuren en sus vastas tierras.
-        </p>
+        <div class="introduccion-box-text">
+          <p>
+            <strong lang="en">Elden Ring</strong> es un videojuego que promete
+            ser una experiencia inmersiva y emocionante, llevando a los
+            jugadores a un viaje a través de un mundo lleno de misterio y
+            peligro.
+          </p>
+          <p>
+            La combinación del talento de
+            <strong lang="ja">Hidetaka Miyazaki</strong> y
+            <strong lang="en">George R. R. Martin</strong> crea una expectativa
+            sin precedentes en la comunidad de jugadores y aficionados a la
+            fantasía.
+          </p>
+          <p>
+            Elden Ring está destinado a dejar una marca indeleble en la
+            industria del videojuego y en la imaginación de quienes se aventuren
+            en sus vastas tierras.
+          </p>
+          <p>
+           Elden Ring ofrece una jugabilidad <strong lang="es">desafiante</strong> y gratificante.
+            Los jugadores tendrán que dominar un sistema de combate complejo y
+            utilizar estratégicamente una variedad de armas y habilidades
+            mágicas para superar los numerosos enemigos y jefes que pueblan el
+            mundo.
+          </p>
+        </div>
       </section>
       <section
         id="section-principal-features"
@@ -49,7 +73,7 @@
       >
         <h2>Carracteristicas Principales</h2>
         <div class="principal-features-fantasy">
-          <h3>universo de fantasía</h3>
+          <h3>Universo de fantasía</h3>
           <p>
             En <strong lang="en">Elden Ring</strong>, los jugadores se sumergen
             totalmente en un nuevo mundo conocido como las
@@ -62,8 +86,6 @@
           </p>
 
           <img
-            autoplay
-            loop
             src="gifs/universo-de-fantasia.gif"
             alt="gif que deja ver un poco del escenario del juego"
           />
@@ -81,9 +103,6 @@
             <strong lang="en">FromSoftware</strong>.
           </p>
           <img
-            autoplay
-            loop
-            muted
             src="gifs/exploracion.gif"
             alt="gif que da a concer en mas profundidad el mundo del elden ring"
           />
@@ -99,7 +118,7 @@
             una experiencia desafiante e intensa en la que los jugadores deben
             aprender de sus errores y adaptarse para avanzar.
           </p>
-          <img autoplay loop muted src="gifs/dificultad.gif" />
+          <img src="gifs/dificultad.gif" />
         </div>
         <div class="principal-features-souls-like">
           <h3 class="principal-features-souls-like-title">
@@ -121,8 +140,8 @@
               de guardado <em lang="es">perderán su progreso</em>.
             </p>
             <img
-              src="/gifs/muerte.gif"
-              alt="cartel que indica que haz muerto en el juego"
+              src="gifs/muerte.gif"
+              alt="cartel que indica que has muerto en el juego"
             />
           </div>
           <div class="souls-like-environmental-narrative">
@@ -135,7 +154,7 @@
               como un rompecabezas, y solo los curiosos la reconstruirán por
               completo.
             </p>
-            <img src="/gifs/baile.gif" alt="vista panoramica del mundo" />
+            <img src="gifs/baile.gif" alt="vista panoramica del mundo" />
           </div>
           <div class="souls-like-character-upgrade">
             <h4>Mejora de personaje</h4>
@@ -146,7 +165,7 @@
               cada muerte.
             </p>
             <img
-              src="/gifs/mejora.gif"
+              src="gifs/mejora.gif"
               alt="personaje del juego acomodandoce la armadura"
             />
           </div>
@@ -159,8 +178,8 @@
               ¿Atacar o esperar? ¿Arriesgar o protegerse? La elección es tuya.
             </p>
             <img
-              src="/gifs/combate-metodico.gif"
-              alt="gamplay de la dificultad del juego"
+              src="gifs/combate-metodico.gif"
+              alt="gameplay que permite apreciar la dificultad del juego"
             />
           </div>
         </div>
@@ -168,6 +187,12 @@
       <section id="section-history" class="section-history">
         <h2 class="history-title">Historia</h2>
         <div class="history-box">
+          <img
+            class="history-box-caballero"
+            src="gifs/caballero-dormido.gif"
+            alt="caballero duermiendo"
+          />
+
           <p>
             En las vastas <strong lang="es"><em>Tierras Intermedias</em></strong
             >, bajo el gobierno de la Reina <strong>Márika</strong>, conocida
@@ -185,6 +210,7 @@
             despreciados por su falta de <em lang="es">gracia</em> y exiliados
             de las Tierras Intermedias: los <em lang="es">Sinluz</em>.
           </p>
+
           <p>
             La narradora, con <em lang="es">gracia</em> en sus manos esbeltas,
             inicia su relato. “Sucedió en tiempos ancestrales. Pero al evocarlo,
@@ -208,6 +234,11 @@
             <em lang="en">Elden</em> fue misteriosamente despedazado, y junto
             con él se desmoronó el orden del mundo.
           </p>
+          <img
+            class="history-box-text-whit-caballero"
+            src="gifs/caballero-de-fuego.gif"
+            alt="caballero de fuego"
+          />
           <p>
             Del caos surgido de esta tragedia emergió la guerra, una guerra
             abierta y amarga que enfrentó a sangre contra sangre y pariente
@@ -249,12 +280,16 @@
             del juego:
           </p>
         </div>
-        <ol>
+        <ul>
           <li class="classes-li-left">
             <div class="li-title-box">
               <h3 class="hero-titulo">Heroe</h3>
             </div>
-            <img class="classes-imag" src="/Personajes/heroe.png" alt="Heroe" />
+            <img
+              class="classes-imag"
+              src="Personajes/heroe.png"
+              alt="clase Heroe"
+            />
             <p class="classes-text">
               El <strong lang="es">Héroe</strong> comienza con mucha
               <em lang="es">Fuerza</em> y <em lang="es">Vigor</em> y un poco de
@@ -266,7 +301,7 @@
             <div class="li-title-box">
               <h3 class="hero-titulo">Bandido</h3>
             </div>
-            <img src="/personajes/bandido.webp" alt="Bandido" />
+            <img src="personajes/bandido.webp" alt="clase Bandido" />
             <p>
               El <strong lang="es">Bandido</strong> comienza con mucho
               <em lang="es">Arcano</em> y <em lang="es">Destreza</em>. Parte del
@@ -278,7 +313,7 @@
             <div class="li-title-box">
               <h3 class="hero-titulo">Astrologo</h3>
             </div>
-            <img src="/Personajes/astrologo.png" alt="astrologo" />
+            <img src="Personajes/astrologo.png" alt="clase astrologo" />
             <p>
               El <strong lang="es">Astrólogo</strong> comienza con mucha
               <em lang="es">Sabiduría</em>, <em lang="es">Mente</em> y un poco
@@ -290,7 +325,7 @@
             <div class="li-title-box">
               <h3 class="hero-titulo">Guerrero</h3>
             </div>
-            <img src="/Personajes/guerrero.webp" alt="guerrrero" />
+            <img src="Personajes/guerrero.webp" alt="clase guerrrero" />
             <p>
               El <strong lang="es">Guerrero</strong> comienza con mucha
               <em lang="es">Destreza</em> y una media del resto de estadísticas
@@ -302,7 +337,7 @@
             <div class="li-title-box">
               <h3 class="hero-titulo">Prisionero</h3>
             </div>
-            <img src="/Personajes/prisionero.webp" alt="prisionero" />
+            <img src="Personajes/prisionero.webp" alt="clase prisionero" />
             <p>
               El <strong lang="es">Prisionero</strong> comienza con mucha
               <em lang="es">Sabiduría</em> y <em lang="es">Destreza</em> y una
@@ -314,7 +349,7 @@
             <div class="li-title-box">
               <h3 class="hero-titulo">Confesor</h3>
             </div>
-            <img src="/Personajes/confesor.webp" alt="confesor" />
+            <img src="Personajes/confesor.webp" alt="clase confesor" />
             <p>
               El <strong lang="es">Confesor</strong> comienza con mucha<em
                 lang="es"
@@ -330,7 +365,7 @@
             <div class="li-title-box">
               <h3 class="hero-titulo">Miserable</h3>
             </div>
-            <img src="/Personajes/miserable.webp" alt="miserable" />
+            <img src="Personajes/miserable.webp" alt="clase miserable" />
             <p>
               El <strong lang="es">Miserable</strong> parte del nivel 1 con 10
               en todas las estadísticas y tan solo una porra como arma. Es la
@@ -344,7 +379,7 @@
             <div class="li-title-box">
               <h3 class="hero-titulo">Vagante</h3>
             </div>
-            <img src="/Personajes/vagabundo.webp" alt="" />
+            <img src="Personajes/vagabundo.webp" alt="clase vagabundo" />
             <p>
               El <strong lang="es">Vagante</strong> comienza con mucha
               <em lang="es">Fuerza</em>, <em lang="es">Vigor</em> y
@@ -356,7 +391,7 @@
             <div class="li-title-box">
               <h3 class="hero-titulo">Profeta</h3>
             </div>
-            <img src="/Personajes/profeta.webp" alt="" />
+            <img src="Personajes/profeta.webp" alt="clase profeta" />
             <p>
               El <strong lang="es">Profeta</strong> comienza con mucha
               <em lang="es">Fe</em> y <em lang="es">Mente</em> y algo de
@@ -367,7 +402,7 @@
             <div class="li-title-box">
               <h3 class="hero-titulo">Samurai</h3>
             </div>
-            <img src="/Personajes/samurai.webp" alt="" />
+            <img src="Personajes/samurai.webp" alt="clase samurai" />
             <p>
               El <strong>Samurái</strong> comienza con mucha
               <em lang="es">Destreza</em> y una media equilibrada en
@@ -376,7 +411,7 @@
               una katana, un arco largo y flechas (¡incluidas flechas de fuego!)
             </p>
           </li>
-        </ol>
+        </ul>
       </section>
       <section id="section-sinluz" class="section-sinluz">
         <h2 class="sinluz-title">Los Sin luz de las Tierras Intermedias</h2>
@@ -431,11 +466,11 @@
         </p>
         <div class="sin-luz-imgs">
           <img
-            src="/imagenes-utiles/jefe.jpg"
+            src="imagenes-utiles/jefe.jpg"
             alt="uno de los enemigos principales del juego"
           />
           <img
-            src="/imagenes-utiles/combatiendo-enemigos.webp"
+            src="imagenes-utiles/combatiendo-enemigos.webp"
             alt="jugador explorando y encontrandose con enemigos del juego"
           />
           <img
