@@ -4,36 +4,10 @@
   font-weight: 200;
   src: local("mantinia-woff"), url(mantinia.woff) format("woff");
 }
-/*Estilos de las etiquetas principales */
+/*------------Estilos de las etiquetas principales----------*/
 * {
   padding: 0;
   margin: 0;
-}
-header {
-  position: fixed;
-  align-content: center;
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  font-family: "eldenFont";
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  background: black;
-  gap: 4px;
-  z-index: 1;
-}
-main {
-  display: flex;
-  flex-direction: column;
-  font-family: "Metropolis", "Gotham", Helvetica "Neue", Helvetica, Arial,
-    sans-serif;
-    color: white;
-
-  font-size: 17px;
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  z-index: 2;
-  overflow-x: hidden;
 }
 h2,
 h3,
@@ -43,348 +17,486 @@ h4 {
   letter-spacing: 0.5px;
   line-height: 25px;
 }
-p{
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+}
+strong {
+  color: #c4a263;
+}
+/* estilos del header */
+header {
+  max-width: 1920px;
+  max-height: 900px;
+}
+header img {
+  max-width: 1903px;
+  height: 800px;
+  padding-top: 40px;
+}
+.header-start-adventure {
+  background-color: #010c0d;
+  margin-top: -4px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 26px;
+  height: 60px;
+  align-content: center;
+}
+.header-start-adventure a {
+  margin-left: 33px;
+  color: #c4a263;
+  text-decoration: none;
+}
+.header-start-adventure a:hover {
+  color: #ffd586;
 }
 /*Estilos del Nav*/
 .header-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
+  position: fixed;
+  align-content: center;
+  height: 60px;
+  width: 1920px;
+  margin: 0;
+  font-family: "eldenFont";
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  background: #010c0d;
+  z-index: 1;
   text-indent: 10px;
+  width: 100%;
 }
 .header-nav a {
   font-size: 20px;
+  padding-left: 15px;
   text-decoration: none;
   color: #c4a263;
 }
 .header-nav a:hover {
   color: white;
 }
-/*Estilos de la seccion introduccion*/
 
-.introduccion-box-elden-ring {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 1920px;
-}
-.introduccion-title {
-  color: #c4a263;
-  font-family: "eldenFont";
+main {
+  color: white;
+  max-width: 1920px;
+  font-size: 17px;
   letter-spacing: 0.5px;
   line-height: 25px;
-  position: absolute;
-  font-size: 100px;
-  bottom: 900px;
-  left: 684px;
+  overflow: hidden;
+}
+/*-------------------Estilos de la seccion introduccion------------------*/
+.introduccion-box-elden-ring {
+  background-image: url(Fondos/fondo-seccion-introduccion.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 1080px;
+}
+.introduccion-title {
+  display: none;
+}
+.introduccion-tittle-img {
+  width: 650px;
+  padding-left: 620px;
+  padding-top: 90px;
+  filter: drop-shadow();
+}
+.introduccion-box-text{
+  width: 1200px;
+  padding-top: 360px;
+  padding-left: 370px;
+  font-size: 19px;
   font-weight: normal;
+  text-align: center;
 }
 .introduccion-box-elden-ring p {
-  font-weight: normal;
-  position: absolute;
-  width: 560px;
-  bottom: 270px;
-  left: 665px;
-  color: white;
-  font-size: 17px;
+  padding-bottom: 15px;
+
 }
-.introduccion-fogata {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  bottom: 100px;
-  left: 800px;
-}
-.introduccion-personaje {
-  display: flex;
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  bottom: 100px;
-  left: 900px;
-}
-/*Estilos de la seccion carracteristicas*/
-.principal-features {
+/*----------Estilos de la seccion carracteristicas--------------------*/
+.section-principal-features {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  bottom: 1px;
-  height: 2300px;
+  height: 450px;
+  height: 2290px;
+  text-align: center;
+  background-image: url(Fondos/fondo-seccion-caracteristicas.jpg);
+  background-size: contain;
+}
+.section-principal-features h2 {
+  padding-top: 80px;
 }
 .principal-features p {
   color: white;
+  font-size: 17px;
 }
-.principal-features-imagen {
-  position: absolute;
-}
-
 /*-------->Estilos de la seccion carracteristicas universo de fantasía*/
 .principal-features-fantasy {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  margin-top: 80px;
+  height: 450px;
 }
-.principal-features-fantasy h2 {
+.principal-features-fantasy h3 {
   position: absolute;
-  left: 1115px;
+  left: 1160px;
+  font-size: 22px;
   top: 80px;
 }
 .principal-features-fantasy p {
   position: absolute;
+  font-size: 17px;
   width: 500px;
   left: 1000px;
   top: 120px;
 }
-.principal-features-fantasy video {
+.principal-features-fantasy img {
   position: absolute;
   width: 650px;
-  height: 650px;
   left: 200px;
 }
 
 /*-------->Estilos de la seccion carracteristicas de exploracion*/
 .principal-features-exploracion {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  height: 450px;
 }
-.principal-features-exploracion h2 {
+.principal-features-exploracion h3 {
   position: absolute;
-  top: 600px;
-  left: 300px;
+  font-size: 22px;
+  left: 324px;
 }
 .principal-features-exploracion p {
   position: absolute;
-  top: 650px;
+  font-size: 17px;
   width: 500px;
+  top: 40px;
+  padding-top: 12px;
   left: 300px;
 }
-.principal-features-exploracion video {
+.principal-features-exploracion img {
   width: 650px;
-  height: 650px;
-  top: 500px;
+  height: 365px;
   left: 1000px;
-
   position: absolute;
 }
 
 /*-------->Estilos de la seccion carracteristicas nivel*/
 .principal-features-level {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  top: 1000px;
+  height: 450px;
 }
-.principal-features-level h2 {
+.principal-features-level h3 {
   position: absolute;
-  top: 70px;
-  left: 1170px;
-  font-size: 30px;
+  font-size: 22px;
+  left: 1226px;
 }
 .principal-features-level p {
   position: absolute;
-  top: 120px;
+  font-size: 17px;
   left: 1030px;
+  top: 40px;
+  padding-top: 12px;
+
   width: 500px;
 }
-.principal-features-level video {
+.principal-features-level img {
   position: absolute;
   width: 650px;
-  height: 650px;
   left: 200px;
 }
 
 /*-------->Estilos de la seccion carracteristicas souls like*/
 .principal-features-souls-like {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  top: 1600px;
-  margin-left: 800px;
+  position: absolute;
+  margin-top: 35px;
+  width: 1920px;
 }
 .principal-features-souls-like-title {
-  position: absolute;
-  bottom: 30px;
   font-size: 30px;
-  left: -55px;
 }
 .principal-features-souls-like-text {
-  position: absolute;
-  left: -101px;
-  font-size: 18px;
+  margin-left: 735px;
+  font-size: 17px;
   width: 454px;
   font-weight: bold;
   text-align: center;
-  bottom: -57px;
+  padding-top: 12px;
+
+  margin-top: 17px;
 }
 /*--------------------------->souls like ---->level*/
 .souls-like-level {
-  position: relative;
-  top: 150px;
-}
-.souls-like-level h3 {
   position: absolute;
+  top: 197px;
+  left: 20px;
+  height: 450px;
+  width: 433px;
+}
+.souls-like-level h4 {
   left: -730px;
   bottom: 20px;
   font-size: 23px;
 }
 .souls-like-level p {
-  position: absolute;
+  font-size: 18px;
   left: -730px;
-  width: 350px;
+  padding-top: 12px;
 }
 .souls-like-level img {
-  position: absolute;
-  left: -730px;
   width: 350px;
   height: 250px;
-  top: 200px;
+  margin-top: 40px;
 }
 /*--------------------------->souls like ---->narrativa*/
 .souls-like-environmental-narrative {
-  position: relative;
-  left: -180px;
-  top: 150px;
+  position: absolute;
+  top: 197px;
+  height: 450px;
+  width: 462px;
+  left: 500px;
 }
 
-.souls-like-environmental-narrative h3 {
-  position: absolute;
+.souls-like-environmental-narrative h4 {
   left: -100px;
   bottom: 20px;
   font-size: 23px;
 }
 
 .souls-like-environmental-narrative p {
-  position: absolute;
-  width: 350px;
-  left: -100px;
+  font-size: 17px;
+  width: 462px;
+  padding-top: 12px;
 }
 .souls-like-environmental-narrative img {
-  position: absolute;
   width: 350px;
   height: 250px;
-  left: -100px;
-  top: 200px;
+  margin-top: 40px;
 }
 /*--------------------------->souls like ---->mejora de personaje*/
 
 .souls-like-character-upgrade {
-  top: 150px;
-  left: -150px;
-  position: relative;
+  height: 450px;
+  width: 350px;
+  position: absolute;
+  top: 197px;
+  left: 1040px;
 }
 
-.souls-like-character-upgrade h3 {
-  position: absolute;
+.souls-like-character-upgrade h4 {
   left: 300px;
   bottom: 20px;
   font-size: 23px;
 }
 
 .souls-like-character-upgrade p {
-  position: absolute;
+  font-size: 17px;
   width: 350px;
   left: 300px;
+  padding-top: 12px;
 }
 .souls-like-character-upgrade img {
-  position: absolute;
   width: 350px;
   height: 250px;
-  left: 300px;
-  top: 200px;
+  margin-top: 70px;
 }
 /*--------------------------->souls like ---->combate metodico*/
 .Methodical-Combat {
-  position: relative;
-  top: 150px;
-  left: -100px;
+  position: absolute;
+  top: 197px;
+  height: 450px;
+  width: 350px;
+  left: 1490px;
 }
 
-.Methodical-Combat h3 {
-  position: absolute;
+.Methodical-Combat h4 {
   left: 700px;
   bottom: 20px;
   font-size: 23px;
 }
 
 .Methodical-Combat p {
-  position: absolute;
+  font-size: 17px;
+  padding-top: 12px;
+
   left: 700px;
   width: 350px;
 }
 .Methodical-Combat img {
-  position: absolute;
-  left: 700px;
   width: 350px;
   height: 250px;
-  top: 200px;
+  margin-top: 73px;
 }
 
-/*Section Historia*/
+/*----------------------Section Historia/*----------------------*/
 .section-history {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-image: url(Fondos/fondo-seccion-historia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .history-title {
-  position: absolute;
-  margin-top: 150px;
+  align-content: center;
+  padding-top: 150px;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
+  margin-left: 900px;
 }
+
 .history-box {
-  gap: 21px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
   width: 1300px;
-  align-items: center;
+  align-content: center;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 30px;
+  margin-left: 300px;
+  padding-bottom: 90px;
 }
+/* estilos de los gifs utilizados en la seccion */
+.history-box-caballero {
+  float: left;
+  width: 100px;
+}
+.history-box-text-whit-caballero {
+  float: right;
+  width: 150px;
+}
+
+/*estilo de los parafos dentro del contenedor*/
+
 .history-box p {
   color: white;
-  top: 210px;
+  font-size: 17px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
+}
+/*----------------------seccion clases------------------- */
+.section-classes {
+  max-width: 1920px;
+  position: relative;
+  background-image: url(Fondos/fondo-diosa.jpg);
+  background-attachment: fixed;
   text-align: center;
 }
+.section-classes ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+.section-classes ul {
+  padding-bottom: 60px;
+}
+.classes-title {
+  padding-top: 100px;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
+}
+.box-classes-text {
+  align-content: center;
+  width: 1000px;
+  margin-left: 490px;
+  margin-top: 25px;
+  font-size: 17px;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
+}
 
-.section-clases {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-image: url(Fondos/elden-ring-characters-gallery-background.webp);
-  background-attachment:fixed ;
+.li-title-box {
+  width: 100%;
+  background-color: #010c0d;
+  border-bottom: #c4a263 solid;
 }
-.clases-box-heroe {
-  position: relative;
+.li-title-box h3 {
+  margin-left: 10px;
 }
 
-/* 
-.clases-box-bandido {
-  position: absolute;
-} */ */
-/* 
-.clases-box-astrologo {
-  position: absolute;
+.classes-li-rigth {
+  position: relative;
+  border: #c4a263 solid;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 110px;
+  left: 1204px;
+  width: 320px;
+  background-color: #010c0d;
 }
-.clases-box-guerrero {
-  position: absolute;
+.classes-li-rigth p {
+  width: 300px;
+  padding-bottom: 20px;
+  padding-left: 9px;
 }
-.clases-box-prisionero {
-  position: absolute;
+.classes-li-rigth h3 {
+  padding-top: 10px;
+  font-size: 27px;
 }
-.clases-box-confesor {
-  position: absolute;
+
+.classes-li-left {
+  position: relative;
+  border: #c4a263 solid;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 110px;
+  width: 320px;
+  left: 430px;
+  background-color: #010c0d;
 }
-.clases-box-miserable {
-  position: absolute;
+.classes-li-left p {
+  width: 300px;
+  padding-bottom: 20px;
+  padding-left: 9px;
 }
-.clases-box-vagante {
-  position: absolute;
+.classes-li-left h3 {
+  padding-top: 10px;
+  margin-left: 10px;
+  font-size: 27px;
 }
-.clases-box-profeta {
-  position: absolute;
+
+/* -------------------secccion los sin luz------------------------------- */
+.section-sinluz {
+  max-width: 1920px;
+  max-height: 1200px;
+  text-align: center;
+  background-image: url(Fondos/fondo-fuego.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.clases-box-samurai {
-  position: absolute;
-} */
+.sinluz-title {
+  padding-top: 113px;
+  padding-bottom: 70px;
+}
+.section-sinluz p {
+  width: 1200px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  margin-left: 316px;
+}
+.sin-luz-imgs {
+  display: inline;
+  width: 500px;
+  height: 500px;
+}
+/*---------------------------estilos del footer--------------------------------- */
+.footer-box {
+  background-color: #010c0d;
+  border: #010c0d solid;
+  height: 250px;
+  color: white;
+}
+.footer-box a {
+  color: #c4a263;
+}
+.footer-img {
+  width: 200px;
+  margin-top: -160px;
+  height: 200px;
+  float: right;
+}
+.footer-text {
+  margin-top: 60px;
+  margin-left: -98px;
+}
+.box-imgs {
+  float: left;
+  padding-right: 316px;
+  padding-top: 45px;
+}
+.box-imgs img {
+  width: 150px;
+}
