@@ -26,13 +26,30 @@ strong {
 }
 /* estilos del header */
 header {
+  position: relative;
   max-width: 1920px;
   max-height: 900px;
+  overflow: hidden;
+
 }
 header img {
-  max-width: 1903px;
+  max-width: 1920px;  
   height: 800px;
   padding-top: 40px;
+}
+/*Estilos del Nav*/
+.header-nav {
+  position: fixed;
+  align-content: center;
+  width: 1920px;
+  height: 60px;
+  margin: 0;
+  font-family: "eldenFont";
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  background: #010c0d;
+  z-index: 1;
+  text-indent: 10px;
 }
 .header-start-adventure {
   background-color: #010c0d;
@@ -51,21 +68,7 @@ header img {
 .header-start-adventure a:hover {
   color: #ffd586;
 }
-/*Estilos del Nav*/
-.header-nav {
-  position: fixed;
-  align-content: center;
-  height: 60px;
-  width: 1920px;
-  margin: 0;
-  font-family: "eldenFont";
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  background: #010c0d;
-  z-index: 1;
-  text-indent: 10px;
-  width: 100%;
-}
+
 .header-nav a {
   font-size: 20px;
   padding-left: 15px;
@@ -86,7 +89,7 @@ main {
 }
 /*-------------------Estilos de la seccion introduccion------------------*/
 .introduccion-box-elden-ring {
-  background-image: url(Fondos/fondo-seccion-introduccion.jpg);
+  background-image: url(../imagenes/fondos/fondo-seccion-introduccion.jpg);
   background-size: auto;
   background-repeat: no-repeat;
   height: 1080px;
@@ -118,7 +121,7 @@ main {
   height: 450px;
   height: 2290px;
   text-align: center;
-  background-image: url(Fondos/fondo-seccion-caracteristicas.jpg);
+  background-image: url(../imagenes/fondos/fondo-seccion-caracteristicas.jpg);
   background-size: contain;
 }
 .section-principal-features h2 {
@@ -328,7 +331,7 @@ main {
 
 /*----------------------Section Historia/*----------------------*/
 .section-history {
-  background-image: url(Fondos/fondo-seccion-historia.jpg);
+  background-image: url(../imagenes/fondos/fondo-seccion-historia.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1920px;
@@ -373,7 +376,7 @@ main {
 .section-classes {
   max-width: 1920px;
   position: relative;
-  background-image: url(Fondos/fondo-diosa.jpg);
+  background-image: url(../imagenes/fondos/fondo-diosa.jpg);
   background-attachment: fixed;
   text-align: center;
 }
@@ -451,9 +454,9 @@ li {
 /* -------------------secccion los sin luz------------------------------- */
 .section-sinluz {
   max-width: 1920px;
-  max-height: 1200px;
+  height: auto;
   text-align: center;
-  background-image: url(Fondos/fondo-fuego.webp);
+  background-image: url(../imagenes/fondos/fondo-fuego.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -468,35 +471,59 @@ li {
   margin-left: 316px;
 }
 .sin-luz-imgs {
-  display: inline;
-  width: 500px;
-  height: 500px;
+  display: flex;
+  gap: 25px;
+  padding-bottom: 49px;
+  margin-left: 80px;
 }
 /*---------------------------estilos del footer--------------------------------- */
 .footer-box {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #010c0d;
-  border: #010c0d solid;
   height: 250px;
   color: white;
 }
 .footer-box a {
+
   color: #c4a263;
 }
 .footer-img {
   width: 200px;
-  margin-top: -160px;
   height: 200px;
-  float: right;
 }
 .footer-text {
-  margin-top: 60px;
-  margin-left: -98px;
+
 }
 .box-imgs {
-  float: left;
-  padding-right: 316px;
-  padding-top: 45px;
+display: flex;
+flex-direction: row;
 }
 .box-imgs img {
   width: 150px;
+}
+/*---------------------------estilos del formulario--------------------------------- */
+.section-form{
+  display: flex;
+  justify-content: center;
+  background-color: burlywood;
+  width: 1920px;
+}
+form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 960px;
+  gap: 30px;
+}
+
+
+form input{
+  height: 25px;
+  border-radius: 6px;
+  background-color: aqua;
+  border: black solid 1px;
 }
