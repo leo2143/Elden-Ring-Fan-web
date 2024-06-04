@@ -514,10 +514,27 @@ flex-direction: row;
 }
 form{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 960px;
   gap: 30px;
+}
+
+.form-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button input{
+  width: 100px;
+  height: 30px;
 }
 
 
