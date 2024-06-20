@@ -495,9 +495,6 @@ li {
   width: 200px;
   height: 200px;
 }
-.footer-text {
-
-}
 .box-imgs {
 display: flex;
 flex-direction: row;
@@ -505,6 +502,70 @@ flex-direction: row;
 .box-imgs img {
   width: 150px;
 }
+/*---------------------------estilos de la seccion otro juegos--------------------------------- */
+.section-other-games {
+  position: relative;
+  max-width: 1920px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section-other-games ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+}
+
+.section-other-games li {
+  flex: 1; 
+  height: 100%;
+  transition: flex 0.8s ease, filter 0.8s ease;
+  position: relative;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  margin: 0 -86px;
+  filter: saturate(0);
+}
+
+.section-other-games li:first-child{
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+.section-other-games li:last-child{
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.contianer-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.other-game-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.other-game-logo{
+  position: absolute; 
+  top: 50%; 
+  width: 300px; 
+  height: auto; 
+}
+.section-other-games li:hover{
+flex: 1.3;
+filter: saturate(100%);
+
+
+}
+
 /*---------------------------estilos del formulario--------------------------------- */
 .section-form{
   display: flex;
