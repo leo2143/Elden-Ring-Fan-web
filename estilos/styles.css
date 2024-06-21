@@ -1,0 +1,755 @@
+@font-face {
+  font-family: "eldenFont";
+  font-style: normal;
+  font-weight: 200;
+  src: local("mantinia-woff"), url(mantinia.woff) format("woff");
+}
+
+/*------------Estilos de las etiquetas principales----------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h2,
+h3,
+h4 {
+  color: #c4a263;
+  font-family: "eldenFont";
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+}
+
+strong {
+  color: #c4a263;
+}
+
+/* estilos del header */
+header {
+  position: relative;
+  max-width: 1920px;
+  overflow: hidden;
+
+}
+
+header img {
+  max-width: 1920px;
+  height: 800px;
+  margin-top: 40px;
+}
+
+/*Estilos del Nav*/
+.header-nav {
+  position: fixed;
+  align-content: center;
+  width: 1920px;
+  height: 60px;
+  margin: 0;
+  font-family: "eldenFont";
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  background: #010c0d;
+  z-index: 1;
+  text-indent: 10px;
+}
+
+.header-start-adventure {
+  background-color: #010c0d;
+  margin-top: -4px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 26px;
+  height: 80px;
+  align-content: center;
+}
+
+.header-start-adventure a {
+  margin-left: 33px;
+  color: #c4a263;
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+
+.header-start-adventure a:hover {
+  color: white;
+}
+
+
+
+.header-nav a {
+  font-size: 20px;
+  padding-left: 15px;
+  text-decoration: none;
+  color: #c4a263;
+}
+
+.header-nav a:hover {
+  color: white;
+}
+
+main {
+  color: white;
+  max-width: 1920px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+/*-------------------Estilos de la seccion introduccion------------------*/
+.introduccion-box-elden-ring {
+  background-image: url(../imagenes/fondos/fondo-seccion-introduccion.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 1080px;
+}
+
+.introduccion-title {
+  display: none;
+}
+
+.introduccion-tittle-img {
+  width: 650px;
+  padding-left: 620px;
+  padding-top: 90px;
+  filter: drop-shadow();
+}
+
+.introduccion-box-text {
+  width: 1200px;
+  padding-top: 360px;
+  padding-left: 370px;
+  font-size: 19px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.introduccion-box-elden-ring p {
+  padding-bottom: 15px;
+
+}
+
+/*----------Estilos de la seccion carracteristicas--------------------*/
+.section-principal-features {
+  position: relative;
+  height: 450px;
+  height: 2290px;
+  text-align: center;
+  background-image: url(../imagenes/fondos/fondo-seccion-caracteristicas.jpg);
+  background-size: contain;
+}
+
+.section-principal-features h2 {
+  padding-top: 80px;
+}
+
+.principal-features p {
+  color: white;
+  font-size: 17px;
+}
+
+/*-------->Estilos de la seccion carracteristicas universo de fantasía*/
+.principal-features-fantasy {
+  position: relative;
+  text-align: center;
+  margin-top: 80px;
+  height: 450px;
+}
+
+.principal-features-fantasy h3 {
+  position: absolute;
+  left: 1160px;
+  font-size: 22px;
+  top: 80px;
+}
+
+.principal-features-fantasy p {
+  position: absolute;
+  font-size: 17px;
+  width: 500px;
+  left: 1000px;
+  top: 120px;
+}
+
+.principal-features-fantasy img {
+  position: absolute;
+  width: 650px;
+  left: 200px;
+}
+
+/*-------->Estilos de la seccion carracteristicas de exploracion*/
+.principal-features-exploracion {
+  position: relative;
+  height: 450px;
+}
+
+.principal-features-exploracion h3 {
+  position: absolute;
+  font-size: 22px;
+  left: 324px;
+}
+
+.principal-features-exploracion p {
+  position: absolute;
+  font-size: 17px;
+  width: 500px;
+  top: 40px;
+  padding-top: 12px;
+  left: 300px;
+}
+
+.principal-features-exploracion img {
+  width: 650px;
+  height: 365px;
+  left: 1000px;
+  position: absolute;
+}
+
+/*-------->Estilos de la seccion carracteristicas nivel*/
+.principal-features-level {
+  position: relative;
+  height: 450px;
+}
+
+.principal-features-level h3 {
+  position: absolute;
+  font-size: 22px;
+  left: 1226px;
+}
+
+.principal-features-level p {
+  position: absolute;
+  font-size: 17px;
+  left: 1030px;
+  top: 40px;
+  padding-top: 12px;
+
+  width: 500px;
+}
+
+.principal-features-level img {
+  position: absolute;
+  width: 650px;
+  left: 200px;
+}
+
+/*-------->Estilos de la seccion carracteristicas souls like*/
+.principal-features-souls-like {
+  position: absolute;
+  margin-top: 35px;
+  width: 1920px;
+}
+
+.principal-features-souls-like-title {
+  font-size: 30px;
+}
+
+.principal-features-souls-like-text {
+  margin-left: 735px;
+  font-size: 17px;
+  width: 454px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 12px;
+
+  margin-top: 17px;
+}
+
+/*--------------------------->souls like ---->level*/
+.souls-like-level {
+  position: absolute;
+  top: 197px;
+  left: 20px;
+  height: 450px;
+  width: 433px;
+}
+
+.souls-like-level h4 {
+  left: -730px;
+  bottom: 20px;
+  font-size: 23px;
+}
+
+.souls-like-level p {
+  font-size: 18px;
+  left: -730px;
+  padding-top: 12px;
+}
+
+.souls-like-level img {
+  width: 350px;
+  height: 250px;
+  margin-top: 40px;
+}
+
+/*--------------------------->souls like ---->narrativa*/
+.souls-like-environmental-narrative {
+  position: absolute;
+  top: 197px;
+  height: 450px;
+  width: 462px;
+  left: 500px;
+}
+
+.souls-like-environmental-narrative h4 {
+  left: -100px;
+  bottom: 20px;
+  font-size: 23px;
+}
+
+.souls-like-environmental-narrative p {
+  font-size: 17px;
+  width: 462px;
+  padding-top: 12px;
+}
+
+.souls-like-environmental-narrative img {
+  width: 350px;
+  height: 250px;
+  margin-top: 40px;
+}
+
+/*--------------------------->souls like ---->mejora de personaje*/
+
+.souls-like-character-upgrade {
+  height: 450px;
+  width: 350px;
+  position: absolute;
+  top: 197px;
+  left: 1040px;
+}
+
+.souls-like-character-upgrade h4 {
+  left: 300px;
+  bottom: 20px;
+  font-size: 23px;
+}
+
+.souls-like-character-upgrade p {
+  font-size: 17px;
+  width: 350px;
+  left: 300px;
+  padding-top: 12px;
+}
+
+.souls-like-character-upgrade img {
+  width: 350px;
+  height: 250px;
+  margin-top: 70px;
+}
+
+/*--------------------------->souls like ---->combate metodico*/
+.Methodical-Combat {
+  position: absolute;
+  top: 197px;
+  height: 450px;
+  width: 350px;
+  left: 1490px;
+}
+
+.Methodical-Combat h4 {
+  left: 700px;
+  bottom: 20px;
+  font-size: 23px;
+}
+
+.Methodical-Combat p {
+  font-size: 17px;
+  padding-top: 12px;
+
+  left: 700px;
+  width: 350px;
+}
+
+.Methodical-Combat img {
+  width: 350px;
+  height: 250px;
+  margin-top: 73px;
+}
+
+/*----------------------Section Historia/*----------------------*/
+.section-history {
+  background-image: url(../imagenes/fondos/fondo-seccion-historia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.history-title {
+  align-content: center;
+  padding-top: 150px;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.history-box {
+  width: 1300px;
+  align-content: center;
+  text-align: center;
+  margin: 30px auto 0;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+/* estilos de los gifs utilizados en la seccion */
+.history-box-caballero {
+  float: left;
+  width: 100px;
+  height: auto;
+}
+
+.history-box-text-whit-caballero {
+  float: right;
+  width: 150px;
+  height: auto;
+}
+
+/*estilo de los parafos dentro del contenedor*/
+
+.history-box p {
+  color: white;
+  font-size: 17px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/*----------------------seccion clases------------------- */
+.section-classes {
+  max-width: 1920px;
+  position: relative;
+  background-image: url(../imagenes/fondos/fondo-diosa.jpg);
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.section-classes ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.section-classes ul {
+  padding-bottom: 60px;
+}
+
+.classes-title {
+  padding-top: 100px;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.box-classes-text {
+  align-content: center;
+  width: 1000px;
+  margin: 25px auto 0 auto;
+  font-size: 17px;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.li-title-box {
+  width: 100%;
+  background-color: #010c0d;
+  border-bottom: #c4a263 solid;
+}
+
+.li-title-box h3 {
+  margin-left: 10px;
+}
+
+.section-classes li {
+  position: relative;
+  border: #c4a263 solid;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 110px;
+  width: 320px;
+  background-color: #010c0d;
+}
+
+.section-classes li p {
+  width: 300px;
+  padding: 0 9px 20px 9px;
+}
+
+.section-classes li h3 {
+  padding-top: 10px;
+  font-size: 27px;
+  margin-left: 10px;
+}
+
+.section-classes li:nth-child(even) {
+  left: 1204px;
+}
+
+.section-classes li:nth-child(odd) {
+  left: 430px;
+}
+
+
+/* -------------------secccion los sin luz------------------------------- */
+.section-sinluz {
+  max-width: 1920px;
+  height: auto;
+  padding-bottom: 80px;
+  text-align: center;
+  background-image: url(../imagenes/fondos/fondo-fuego.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sinluz-title {
+  padding-top: 113px;
+  padding-bottom: 70px;
+}
+
+.section-sinluz p {
+  width: 1200px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  margin-left: 316px;
+}
+
+.sin-luz-imgs {
+  display: flex;
+  gap: 25px;
+  padding-bottom: 49px;
+  margin-left: 80px;
+}
+
+/*---------------------------estilos del footer--------------------------------- */
+.footer-box {
+  max-width: 1920px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #010c0d;
+  height: 250px;
+  color: white;
+}
+
+.footer-box a {
+
+  color: #c4a263;
+}
+
+.footer-img {
+  width: 200px;
+  height: 200px;
+}
+
+.box-imgs {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-imgs img {
+  width: 150px;
+  height: auto;
+}
+
+/*---------------------------estilos de la seccion otro juegos--------------------------------- */
+.section-other-games {
+  max-width: 1920px;
+  height: 100vh;
+  overflow: hidden;
+}
+.section-other-games h2{
+  background-color: gray;
+  color: #000000;
+  height: 50px;
+  z-index: 1;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-other-games ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
+.section-other-games li {
+  flex: 1;
+  height: 100%;
+  transition: flex 0.8s ease, filter 0.8s ease;
+  position: relative;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  margin: 0 -86px;
+  filter: saturate(0);
+}
+
+.section-other-games li:first-child {
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.section-other-games li:last-child {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.container-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container-image div{
+position: absolute;
+width: 400px;
+margin-left: -66px;
+bottom: 150px;
+}
+.container-image div p{
+  text-shadow: 2px 2px 4px black;
+  }
+
+.other-games-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.other-games-logo {
+  position: absolute;
+  top: 0;
+  margin-left: 76px;
+  width: 300px;
+  height: auto;
+}
+.section-other-games:hover h2 {
+  background-color: #010c0d;
+  color: #c4a263;
+}
+.section-other-games li:hover {
+  flex: 1.3;
+  filter: saturate(100%);
+}
+
+
+/*---------------------------estilos del formulario--------------------------------- */
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: burlywood;
+  align-items: center;
+  max-width: 1920px;
+  height: 600px;
+
+}
+
+.form-image-container,
+.form-image-container img {
+  height: 524px;
+  width: 524px;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  background-color: #010c0d;
+  height: 524px;
+  width: 60%;
+  box-shadow: -27px 12px 31px 7px rgba(87,65,25,0.94);
+  -webkit-box-shadow: -27px 12px 31px 7px rgba(87,65,25,0.94);
+  -moz-box-shadow: -27px 12px 31px 7px rgba(87,65,25,0.94);
+}
+
+.card-form h2 {
+  margin-top: 20px;
+}
+
+.texto {
+  width: 960px;
+  text-align: center;
+  font: inherit;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 960px;
+  gap: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+form label {
+  display: none;
+}
+
+.form-group {
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+form input, form textarea, form select {
+  border: none;
+  outline: none;
+
+}
+
+form input {
+  height: 25px;
+  padding: 6px 70px 6px 13px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+form select {
+  height: 38px;
+  padding: 6px 70px 6px 13px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+form input::placeholder {
+  margin-right: 40px;
+}
+
+[type="submit"] {
+  border: none;
+  outline: none;
+  background-color: #c4a263;
+  border-radius: 13px;
+  height: 39px;
+  margin-left: 27px;
+  padding: 6px 14px 6px 13px;
+  transition: 0.3s ease;
+  font: inherit;
+
+}
+
+[type="submit"]:hover {
+  color: white;
+}
+
+
+
+.form-group textarea {
+  width: 980px;
+  height: 85px;
+  border-radius: 6px;
+  padding: 8px;
+  font: inherit;
+}
