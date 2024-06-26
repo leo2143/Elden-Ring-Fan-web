@@ -37,7 +37,6 @@ header {
 }
 
 header img {
-  max-width: 1920px;
   height: 800px;
   margin-top: 40px;
 }
@@ -114,6 +113,7 @@ main {
   align-items: center;
   gap: 445px;
   background-image: url(../imagenes/fondos/fondo-seccion-introduccion.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 80px;
@@ -171,8 +171,7 @@ main {
   height: 450px;
 }
 
-.principal-features-fantasy div:last-child{
-
+.principal-features-fantasy div:last-child {
   display: flex;
   flex-direction: column;
 
@@ -202,7 +201,7 @@ main {
   gap: 90px;
   height: 450px;
 }
-.principal-features-exploracion div:first-child{
+.principal-features-exploracion div:first-child {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -222,16 +221,16 @@ main {
   height: 365px;
 }
 
-/*-------->Estilos de la seccion carracteristicas nivel*/
+/*-------->Estilos de la seccion características nivel*/
 .principal-features-level {
   display: flex;
-  text-align: center;
-  flex-direction: row;
   justify-content: center;
   gap: 90px;
   height: 450px;
+  text-align: center;
 }
-.principal-features-level div:last-child{
+
+.principal-features-level div:last-child {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -250,14 +249,15 @@ main {
   width: 650px;
 }
 
-/*-------->Estilos de la seccion carracteristicas souls like*/
+/*-------->Estilos de la seccion características souls like*/
 .principal-features-souls-like {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 80px;
-  width: 1920px;
+  width: 100%; /* Mejor utilizar 100% para ancho flexible */
+  max-width: 1920px;
 }
 
 .principal-features-souls-like-title-container {
@@ -266,6 +266,7 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .principal-features-souls-like-title-container h3 {
   font-size: 28px;
 }
@@ -275,93 +276,52 @@ main {
   width: 454px;
   font-weight: bold;
   text-align: center;
-  padding-top: 12px;
-
   margin-top: 17px;
+  padding-top: 12px;
 }
 
-/*--------------------------->souls like ---->level*/
+/*-------->Souls like containers*/
 .principal-features-souls-like-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 60px;
 }
-.souls-like-level {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  width: 433px;
-  height: 450px;
-}
-.souls-like-level div:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
 
-.souls-like-level h4 {
-  font-size: 23px;
-}
-.souls-like-level img {
-  width: 350px;
-  height: 250px;
-}
-
-/*--------------------------->souls like ---->narrativa*/
-.souls-like-environmental-narrative {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  width: 433px;
-  height: 450px;
-}
-.souls-like-environmental-narrative div:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-}
-
-.souls-like-environmental-narrative h4 {
-  font-size: 23px;
-}
-
-.souls-like-environmental-narrative img {
-  width: 350px;
-  height: 250px;
-}
-
-/*--------------------------->souls like ---->mejora de personaje*/
-
-/*--------------------------->souls like ---->combate metodico*/
+.souls-like-level,
+.souls-like-environmental-narrative,
 .Methodical-Combat {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  height: 450px;
   width: 433px;
+  height: 450px;
 }
+
+.souls-like-level div:first-child,
+.souls-like-environmental-narrative div:first-child,
 .Methodical-Combat div:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
+
+.souls-like-level h4,
+.souls-like-environmental-narrative h4,
 .Methodical-Combat h4 {
   font-size: 23px;
 }
 
+.souls-like-level img,
+.souls-like-environmental-narrative img,
 .Methodical-Combat img {
   width: 350px;
   height: 250px;
 }
+
 
 /*----------------------Section Historia/*----------------------*/
 .section-history {
@@ -428,7 +388,10 @@ li {
 }
 
 .section-classes ul {
+  display: flex;
   padding-bottom: 60px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .classes-title {
@@ -476,11 +439,11 @@ li {
 }
 
 .section-classes li:nth-child(even) {
-  left: 1204px;
+  margin-left: 450px;
 }
 
 .section-classes li:nth-child(odd) {
-  left: 430px;
+  margin-right: 450px;
 }
 
 /* -------------------secccion los sin luz------------------------------- */
@@ -516,6 +479,9 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 25px;
+}
+.sin-luz-imgs img {
+  width: 350px;
 }
 .section-sinluz h3 {
   font-size: 22px;
@@ -609,7 +575,7 @@ li {
 }
 .container-image div {
   position: absolute;
-  width: 400px;
+  width: 55%;
   margin-left: -66px;
   bottom: 150px;
   opacity: 0;
@@ -647,19 +613,22 @@ li {
 }
 
 /*---------------------------estilos del formulario--------------------------------- */
+.section-form {
+  background-color: burlywood;
+  height: 635px;
+}
 .form-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: burlywood;
   align-items: center;
   height: 600px;
 }
 
 .form-image-container,
 .form-image-container img {
-  height: 524px;
-  width: 524px;
+  height: 537px;
+  width: 537px;
 }
 
 .card-form {
@@ -668,7 +637,7 @@ li {
   align-items: center;
   gap: 13px;
   background-color: #010c0d;
-  height: 524px;
+  height: 537px;
   width: 60%;
   box-shadow: -27px 12px 31px 7px rgba(87, 65, 25, 0.94);
   -webkit-box-shadow: -27px 12px 31px 7px rgba(87, 65, 25, 0.94);
@@ -689,7 +658,7 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   gap: 30px;
   font-family: "Open Sans", sans-serif;
 }
@@ -699,13 +668,34 @@ form label {
 }
 
 .form-group {
-  margin-top: 20px;
-  margin-left: 30px;
   display: flex;
   flex-direction: row;
   gap: 20px;
   flex-wrap: wrap;
+  width: 48%;
 }
+.form-group-text {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form-group-select {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form-group-button{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 form input,
 form textarea,
 form select {
@@ -714,21 +704,29 @@ form select {
 }
 
 form input {
-  height: 25px;
-  padding: 6px 70px 6px 13px;
+  width: 100%;
+  padding: 13px;
   border-radius: 6px;
   background-color: white;
 }
 
 form select {
-  height: 38px;
-  padding: 6px 424px 6px 13px;
+  width: 100%;
+  padding: 13px;
   border-radius: 6px;
   background-color: white;
+}
+form select::placeholder {
+  color: #010c0d;
 }
 
 form input::placeholder {
   margin-right: 40px;
+  color: #010c0d;
+}
+textarea::placeholder{
+  color: #010c0d;
+  font-size: 16px;
 }
 
 [type="submit"] {
@@ -737,7 +735,6 @@ form input::placeholder {
   background-color: #c4a263;
   border-radius: 13px;
   height: 39px;
-  margin-left: 27px;
   padding: 6px 14px 6px 13px;
   transition: 0.3s ease;
   font: inherit;
@@ -747,10 +744,11 @@ form input::placeholder {
   color: white;
 }
 
-.form-group textarea {
-  width: 862px;
+.form-group-text textarea {
+  width: 100%;
   height: 85px;
   border-radius: 6px;
   padding: 8px;
   font: inherit;
 }
+
