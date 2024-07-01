@@ -34,11 +34,9 @@ header {
   position: relative;
   max-width: 1920px;
   overflow: hidden;
-
 }
 
 header img {
-  max-width: 1920px;
   height: 800px;
   margin-top: 40px;
 }
@@ -46,6 +44,8 @@ header img {
 /*Estilos del Nav*/
 .header-nav {
   position: fixed;
+  display: flex;
+  align-items: center;
   align-content: center;
   width: 1920px;
   height: 60px;
@@ -58,18 +58,25 @@ header img {
   text-indent: 10px;
 }
 
-.header-start-adventure {
+.header-start-adventure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #010c0d;
-  margin-top: -4px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 26px;
-  height: 80px;
   align-content: center;
 }
-
+.header-start-adventure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1920px;
+  height: 90px;
+}
 .header-start-adventure a {
-  margin-left: 33px;
   color: #c4a263;
   transition: 0.5s ease;
   text-decoration: none;
@@ -78,8 +85,6 @@ header img {
 .header-start-adventure a:hover {
   color: white;
 }
-
-
 
 .header-nav a {
   font-size: 20px;
@@ -103,10 +108,15 @@ main {
 
 /*-------------------Estilos de la seccion introduccion------------------*/
 .introduccion-box-elden-ring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 445px;
   background-image: url(../imagenes/fondos/fondo-seccion-introduccion.jpg);
-  background-size: auto;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 1080px;
+  padding-bottom: 80px;
 }
 
 .introduccion-title {
@@ -115,15 +125,11 @@ main {
 
 .introduccion-tittle-img {
   width: 650px;
-  padding-left: 620px;
-  padding-top: 90px;
   filter: drop-shadow();
 }
 
 .introduccion-box-text {
   width: 1200px;
-  padding-top: 360px;
-  padding-left: 370px;
   font-size: 19px;
   font-weight: normal;
   text-align: center;
@@ -131,19 +137,20 @@ main {
 
 .introduccion-box-elden-ring p {
   padding-bottom: 15px;
-
 }
 
 /*----------Estilos de la seccion carracteristicas--------------------*/
 .section-principal-features {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   height: 450px;
-  height: 2290px;
+  height: 2390px;
   text-align: center;
   background-image: url(../imagenes/fondos/fondo-seccion-caracteristicas.jpg);
-  background-size: contain;
+  background-size: cover;
 }
-
 .section-principal-features h2 {
   padding-top: 80px;
 }
@@ -155,229 +162,177 @@ main {
 
 /*-------->Estilos de la seccion carracteristicas universo de fantasía*/
 .principal-features-fantasy {
-  position: relative;
+  display: flex;
   text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 90px;
   margin-top: 80px;
   height: 450px;
 }
 
+.principal-features-fantasy div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
 .principal-features-fantasy h3 {
-  position: absolute;
-  left: 1160px;
   font-size: 22px;
-  top: 80px;
 }
 
 .principal-features-fantasy p {
-  position: absolute;
   font-size: 17px;
   width: 500px;
-  left: 1000px;
-  top: 120px;
 }
 
-.principal-features-fantasy img {
-  position: absolute;
+.principal-features-fantasy video {
   width: 650px;
   left: 200px;
 }
 
 /*-------->Estilos de la seccion carracteristicas de exploracion*/
 .principal-features-exploracion {
-  position: relative;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 90px;
   height: 450px;
+}
+.principal-features-exploracion div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .principal-features-exploracion h3 {
-  position: absolute;
   font-size: 22px;
-  left: 324px;
 }
 
 .principal-features-exploracion p {
-  position: absolute;
   font-size: 17px;
   width: 500px;
-  top: 40px;
-  padding-top: 12px;
-  left: 300px;
 }
 
-.principal-features-exploracion img {
+.principal-features-exploracion video {
   width: 650px;
   height: 365px;
-  left: 1000px;
-  position: absolute;
 }
 
-/*-------->Estilos de la seccion carracteristicas nivel*/
+/*-------->Estilos de la seccion características nivel*/
 .principal-features-level {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
   height: 450px;
+  text-align: center;
+}
+
+.principal-features-level div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .principal-features-level h3 {
-  position: absolute;
   font-size: 22px;
-  left: 1226px;
 }
 
 .principal-features-level p {
-  position: absolute;
   font-size: 17px;
-  left: 1030px;
-  top: 40px;
-  padding-top: 12px;
-
   width: 500px;
 }
 
-.principal-features-level img {
-  position: absolute;
+.principal-features-level video {
   width: 650px;
-  left: 200px;
 }
 
-/*-------->Estilos de la seccion carracteristicas souls like*/
+/*-------->Estilos de la seccion características souls like*/
 .principal-features-souls-like {
-  position: absolute;
-  margin-top: 35px;
-  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 100%; /* Mejor utilizar 100% para ancho flexible */
+  max-width: 1920px;
 }
 
-.principal-features-souls-like-title {
-  font-size: 30px;
+.principal-features-souls-like-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal-features-souls-like-title-container h3 {
+  font-size: 28px;
 }
 
 .principal-features-souls-like-text {
-  margin-left: 735px;
   font-size: 17px;
   width: 454px;
   font-weight: bold;
   text-align: center;
-  padding-top: 12px;
-
   margin-top: 17px;
-}
-
-/*--------------------------->souls like ---->level*/
-.souls-like-level {
-  position: absolute;
-  top: 197px;
-  left: 20px;
-  height: 450px;
-  width: 433px;
-}
-
-.souls-like-level h4 {
-  left: -730px;
-  bottom: 20px;
-  font-size: 23px;
-}
-
-.souls-like-level p {
-  font-size: 18px;
-  left: -730px;
   padding-top: 12px;
 }
 
-.souls-like-level img {
-  width: 350px;
-  height: 250px;
-  margin-top: 40px;
+/*-------->Souls like containers*/
+.principal-features-souls-like-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
 }
 
-/*--------------------------->souls like ---->narrativa*/
-.souls-like-environmental-narrative {
-  position: absolute;
-  top: 197px;
-  height: 450px;
-  width: 462px;
-  left: 500px;
-}
-
-.souls-like-environmental-narrative h4 {
-  left: -100px;
-  bottom: 20px;
-  font-size: 23px;
-}
-
-.souls-like-environmental-narrative p {
-  font-size: 17px;
-  width: 462px;
-  padding-top: 12px;
-}
-
-.souls-like-environmental-narrative img {
-  width: 350px;
-  height: 250px;
-  margin-top: 40px;
-}
-
-/*--------------------------->souls like ---->mejora de personaje*/
-
-.souls-like-character-upgrade {
-  height: 450px;
-  width: 350px;
-  position: absolute;
-  top: 197px;
-  left: 1040px;
-}
-
-.souls-like-character-upgrade h4 {
-  left: 300px;
-  bottom: 20px;
-  font-size: 23px;
-}
-
-.souls-like-character-upgrade p {
-  font-size: 17px;
-  width: 350px;
-  left: 300px;
-  padding-top: 12px;
-}
-
-.souls-like-character-upgrade img {
-  width: 350px;
-  height: 250px;
-  margin-top: 70px;
-}
-
-/*--------------------------->souls like ---->combate metodico*/
+.souls-like-level,
+.souls-like-environmental-narrative,
 .Methodical-Combat {
-  position: absolute;
-  top: 197px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 433px;
   height: 450px;
-  width: 350px;
-  left: 1490px;
 }
 
+.souls-like-level div:first-child,
+.souls-like-environmental-narrative div:first-child,
+.Methodical-Combat div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.souls-like-level h4,
+.souls-like-environmental-narrative h4,
 .Methodical-Combat h4 {
-  left: 700px;
-  bottom: 20px;
   font-size: 23px;
 }
 
-.Methodical-Combat p {
-  font-size: 17px;
-  padding-top: 12px;
-
-  left: 700px;
-  width: 350px;
-}
-
+.souls-like-level img,
+.souls-like-environmental-narrative img,
 .Methodical-Combat img {
   width: 350px;
   height: 250px;
-  margin-top: 73px;
 }
 
 /*----------------------Section Historia/*----------------------*/
 .section-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 40px;
   background-image: url(../imagenes/fondos/fondo-seccion-historia.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1920px;
   text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -392,9 +347,7 @@ main {
   width: 1300px;
   align-content: center;
   text-align: center;
-  margin: 30px auto 0;
   text-align: center;
-  padding-bottom: 90px;
 }
 
 /* estilos de los gifs utilizados en la seccion */
@@ -416,13 +369,11 @@ main {
   color: white;
   font-size: 17px;
   padding-bottom: 20px;
-  text-align: center;
   text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 /*----------------------seccion clases------------------- */
 .section-classes {
-  max-width: 1920px;
   position: relative;
   background-image: url(../imagenes/fondos/fondo-diosa.jpg);
   background-attachment: fixed;
@@ -436,7 +387,10 @@ li {
 }
 
 .section-classes ul {
+  display: flex;
   padding-bottom: 60px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .classes-title {
@@ -484,42 +438,55 @@ li {
 }
 
 .section-classes li:nth-child(even) {
-  left: 1204px;
+  margin-left: 450px;
 }
 
 .section-classes li:nth-child(odd) {
-  left: 430px;
+  margin-right: 450px;
 }
-
 
 /* -------------------secccion los sin luz------------------------------- */
 .section-sinluz {
-  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: auto;
   padding-bottom: 80px;
+  gap: 40px;
   text-align: center;
   background-image: url(../imagenes/fondos/fondo-fuego.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
+.sinluz-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
 .sinluz-title {
   padding-top: 113px;
-  padding-bottom: 70px;
 }
 
 .section-sinluz p {
   width: 1200px;
-  margin-bottom: 25px;
   font-size: 17px;
-  margin-left: 316px;
 }
 
 .sin-luz-imgs {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 25px;
-  padding-bottom: 49px;
-  margin-left: 80px;
+}
+.sin-luz-imgs img {
+  width: 350px;
+}
+.section-sinluz h3 {
+  font-size: 22px;
+}
+.sinluz-iframe {
+  width: 50%;
 }
 
 /*---------------------------estilos del footer--------------------------------- */
@@ -535,7 +502,6 @@ li {
 }
 
 .footer-box a {
-
   color: #c4a263;
 }
 
@@ -560,7 +526,7 @@ li {
   height: 100vh;
   overflow: hidden;
 }
-.section-other-games h2{
+.section-other-games h2 {
   background-color: gray;
   color: #000000;
   height: 50px;
@@ -579,7 +545,6 @@ li {
   padding: 0;
   margin: 0;
   list-style: none;
-
 }
 
 .section-other-games li {
@@ -606,17 +571,18 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.container-image div{
-position: absolute;
-width: 400px;
-margin-left: -66px;
-bottom: 150px;
+.container-image div {
+  position: absolute;
+  width: 55%;
+  margin-left: -66px;
+  bottom: 150px;
+  opacity: 0;
+  z-index: 1;
 }
-.container-image div p{
+.container-image div p {
   text-shadow: 2px 2px 4px black;
-  }
+}
 
 .other-games-background {
   width: 100%;
@@ -632,31 +598,52 @@ bottom: 150px;
   height: auto;
 }
 .section-other-games:hover h2 {
+  transition: 0.8s ease;
   background-color: #010c0d;
   color: #c4a263;
 }
+.container-image:hover div {
+  transition: 0.8s ease;
+  opacity: 100%;
+}
+
+.container-image:hover div p ::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -91px;
+  width: 160%;
+  height: 127%;
+  filter: blur(3px);
+  transition: 0.8s, ease;
+  z-index: -1;
+  background-color: rgb(0 0 0 / 47%);
+}
+
+
 .section-other-games li:hover {
+  transition: 0.8s ease;
   flex: 1.3;
   filter: saturate(100%);
 }
 
-
 /*---------------------------estilos del formulario--------------------------------- */
+.section-form {
+  background-color: burlywood;
+  height: 635px;
+}
 .form-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: burlywood;
   align-items: center;
-  max-width: 1920px;
   height: 600px;
-
 }
 
 .form-image-container,
 .form-image-container img {
-  height: 524px;
-  width: 524px;
+  height: 537px;
+  width: 537px;
 }
 
 .card-form {
@@ -665,11 +652,11 @@ bottom: 150px;
   align-items: center;
   gap: 13px;
   background-color: #010c0d;
-  height: 524px;
+  height: 537px;
   width: 60%;
-  box-shadow: -27px 12px 31px 7px rgba(87,65,25,0.94);
-  -webkit-box-shadow: -27px 12px 31px 7px rgba(87,65,25,0.94);
-  -moz-box-shadow: -27px 12px 31px 7px rgba(87,65,25,0.94);
+  box-shadow: -27px 12px 31px 7px rgba(87, 65, 25, 0.94);
+  -webkit-box-shadow: -27px 12px 31px 7px rgba(87, 65, 25, 0.94);
+  -moz-box-shadow: -27px 12px 31px 7px rgba(87, 65, 25, 0.94);
 }
 
 .card-form h2 {
@@ -677,7 +664,7 @@ bottom: 150px;
 }
 
 .texto {
-  width: 960px;
+  width: 90%;
   text-align: center;
   font: inherit;
 }
@@ -686,7 +673,7 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 960px;
+  width: 90%;
   gap: 30px;
   font-family: "Open Sans", sans-serif;
 }
@@ -696,35 +683,65 @@ form label {
 }
 
 .form-group {
-  margin-top: 20px;
-  margin-left: 30px;
   display: flex;
   flex-direction: row;
   gap: 20px;
   flex-wrap: wrap;
+  width: 48%;
 }
-form input, form textarea, form select {
+.form-group-text {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form-group-select {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form-group-button {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+form input,
+form textarea,
+form select {
   border: none;
   outline: none;
-
 }
 
 form input {
-  height: 25px;
-  padding: 6px 70px 6px 13px;
+  width: 100%;
+  padding: 13px;
   border-radius: 6px;
   background-color: white;
 }
 
 form select {
-  height: 38px;
-  padding: 6px 70px 6px 13px;
+  width: 100%;
+  padding: 13px;
   border-radius: 6px;
   background-color: white;
+}
+form select::placeholder {
+  color: #010c0d;
 }
 
 form input::placeholder {
   margin-right: 40px;
+  color: #010c0d;
+}
+textarea::placeholder {
+  color: #010c0d;
+  font-size: 16px;
 }
 
 [type="submit"] {
@@ -733,21 +750,17 @@ form input::placeholder {
   background-color: #c4a263;
   border-radius: 13px;
   height: 39px;
-  margin-left: 27px;
   padding: 6px 14px 6px 13px;
   transition: 0.3s ease;
   font: inherit;
-
 }
 
 [type="submit"]:hover {
   color: white;
 }
 
-
-
-.form-group textarea {
-  width: 980px;
+.form-group-text textarea {
+  width: 100%;
   height: 85px;
   border-radius: 6px;
   padding: 8px;
