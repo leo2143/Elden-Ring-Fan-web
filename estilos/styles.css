@@ -149,7 +149,8 @@ main {
   align-items: center;
   gap: 10px;
   height: 450px;
-  height: 2390px;
+  height: auto;
+  padding-bottom: 50px;
   text-align: center;
   background-image: url(../imagenes/fondos/fondo-seccion-caracteristicas.jpg);
   background-size: cover;
@@ -171,15 +172,18 @@ main {
   justify-content: center;
   gap: 90px;
   margin-top: 80px;
-  height: 450px;
+  padding-bottom: 80px;
 }
 
 .principal-features-fantasy div:last-child {
   display: flex;
   flex-direction: column;
-
   gap: 20px;
 }
+.principal-features-fantasy div:first-child {
+  width: 37%;
+}
+
 
 .principal-features-fantasy h3 {
   font-size: 22px;
@@ -191,8 +195,8 @@ main {
 }
 
 .principal-features-fantasy video {
-  width: 650px;
-  left: 200px;
+  width: 100%;
+
 }
 
 /*-------->Estilos de la seccion carracteristicas de exploracion*/
@@ -202,12 +206,16 @@ main {
   flex-direction: row;
   justify-content: center;
   gap: 90px;
-  height: 450px;
+  padding-bottom: 80px;
+  height: 20%;
 }
 .principal-features-exploracion div:first-child {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.principal-features-exploracion div:last-child {
+width: 37%;
 }
 
 .principal-features-exploracion h3 {
@@ -220,8 +228,8 @@ main {
 }
 
 .principal-features-exploracion video {
-  width: 650px;
-  height: 365px;
+  width: 100%;
+
 }
 
 /*-------->Estilos de la seccion características nivel*/
@@ -229,10 +237,14 @@ main {
   display: flex;
   justify-content: center;
   gap: 90px;
-  height: 450px;
+  height: 20%;
+  padding-bottom: 80px;
   text-align: center;
 }
 
+.principal-features-level div:first-child {
+width: 37%;
+}
 .principal-features-level div:last-child {
   display: flex;
   flex-direction: column;
@@ -249,7 +261,7 @@ main {
 }
 
 .principal-features-level video {
-  width: 650px;
+  width: 100%;
 }
 
 /*-------->Estilos de la seccion características souls like*/
@@ -299,8 +311,8 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  width: 433px;
-  height: 450px;
+  width: 20%;
+  height: 20%;
 }
 
 .souls-like-level div:first-child,
