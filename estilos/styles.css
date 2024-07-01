@@ -129,7 +129,10 @@ main {
 }
 
 .introduccion-box-text {
-  width: 1200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  width: 55%;
   font-size: 19px;
   font-weight: normal;
   text-align: center;
