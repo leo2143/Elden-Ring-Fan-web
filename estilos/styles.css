@@ -37,8 +37,8 @@ header {
 }
 
 header img {
-  height: 800px;
-  margin-top: 40px;
+width: 100%;
+margin-top: 40px;
 }
 
 /*Estilos del Nav*/
@@ -67,6 +67,7 @@ header img {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 26px;
+  width: 100%;
   align-content: center;
 }
 .header-start-adventure {
@@ -178,7 +179,9 @@ main {
 .principal-features-fantasy div:last-child {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
+  width: 30%;
 }
 .principal-features-fantasy div:first-child {
   width: 37%;
@@ -186,12 +189,14 @@ main {
 
 
 .principal-features-fantasy h3 {
+  width: 100%;
+
   font-size: 22px;
 }
 
 .principal-features-fantasy p {
   font-size: 17px;
-  width: 500px;
+  width: 100%;
 }
 
 .principal-features-fantasy video {
@@ -212,19 +217,22 @@ main {
 .principal-features-exploracion div:first-child {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
+  width: 30%;
 }
 .principal-features-exploracion div:last-child {
 width: 37%;
 }
 
 .principal-features-exploracion h3 {
+  width: 100%;
   font-size: 22px;
 }
 
 .principal-features-exploracion p {
   font-size: 17px;
-  width: 500px;
+  width: 100%;
 }
 
 .principal-features-exploracion video {
@@ -248,16 +256,18 @@ width: 37%;
 .principal-features-level div:last-child {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
+  width: 30%;
 }
 
 .principal-features-level h3 {
-  font-size: 22px;
+  width: 100%;
 }
 
 .principal-features-level p {
   font-size: 17px;
-  width: 500px;
+  width: 100%;
 }
 
 .principal-features-level video {
@@ -333,8 +343,10 @@ width: 37%;
 .souls-like-level img,
 .souls-like-environmental-narrative img,
 .Methodical-Combat img {
-  width: 350px;
-  height: 250px;
+ 
+  width: 100%;
+  
+
 }
 
 /*----------------------Section Historia/*----------------------*/
@@ -359,7 +371,7 @@ width: 37%;
 }
 
 .history-box {
-  width: 1300px;
+  width: 70%;
   align-content: center;
   text-align: center;
   text-align: center;
@@ -415,7 +427,7 @@ li {
 
 .box-classes-text {
   align-content: center;
-  width: 1000px;
+  width: 60%;
   margin: 25px auto 0 auto;
   font-size: 17px;
   text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
@@ -476,6 +488,8 @@ li {
 .sinluz-text {
   display: flex;
   flex-direction: column;
+  width: 70%;
+  align-items: center;
   gap: 25px;
 }
 
@@ -484,7 +498,7 @@ li {
 }
 
 .section-sinluz p {
-  width: 1200px;
+  width: 100%;
   font-size: 17px;
 }
 
