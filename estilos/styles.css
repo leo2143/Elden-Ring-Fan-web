@@ -37,8 +37,8 @@ header {
 }
 
 header img {
-  height: 800px;
-  margin-top: 40px;
+width: 100%;
+margin-top: 40px;
 }
 
 /*Estilos del Nav*/
@@ -67,6 +67,7 @@ header img {
   font-family: "Open Sans", sans-serif;
   text-align: center;
   font-size: 26px;
+  width: 100%;
   align-content: center;
 }
 .header-start-adventure {
@@ -129,7 +130,10 @@ main {
 }
 
 .introduccion-box-text {
-  width: 1200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  width: 55%;
   font-size: 19px;
   font-weight: normal;
   text-align: center;
@@ -146,7 +150,8 @@ main {
   align-items: center;
   gap: 10px;
   height: 450px;
-  height: 2390px;
+  height: auto;
+  padding-bottom: 50px;
   text-align: center;
   background-image: url(../imagenes/fondos/fondo-seccion-caracteristicas.jpg);
   background-size: cover;
@@ -168,28 +173,35 @@ main {
   justify-content: center;
   gap: 90px;
   margin-top: 80px;
-  height: 450px;
+  padding-bottom: 80px;
 }
 
 .principal-features-fantasy div:last-child {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   gap: 20px;
+  width: 30%;
+}
+.principal-features-fantasy div:first-child {
+  width: 37%;
 }
 
+
 .principal-features-fantasy h3 {
+  width: 100%;
+
   font-size: 22px;
 }
 
 .principal-features-fantasy p {
   font-size: 17px;
-  width: 500px;
+  width: 100%;
 }
 
 .principal-features-fantasy video {
-  width: 650px;
-  left: 200px;
+  width: 100%;
+
 }
 
 /*-------->Estilos de la seccion carracteristicas de exploracion*/
@@ -199,26 +211,33 @@ main {
   flex-direction: row;
   justify-content: center;
   gap: 90px;
-  height: 450px;
+  padding-bottom: 80px;
+  height: 20%;
 }
 .principal-features-exploracion div:first-child {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
+  width: 30%;
+}
+.principal-features-exploracion div:last-child {
+width: 37%;
 }
 
 .principal-features-exploracion h3 {
+  width: 100%;
   font-size: 22px;
 }
 
 .principal-features-exploracion p {
   font-size: 17px;
-  width: 500px;
+  width: 100%;
 }
 
 .principal-features-exploracion video {
-  width: 650px;
-  height: 365px;
+  width: 100%;
+
 }
 
 /*-------->Estilos de la seccion características nivel*/
@@ -226,27 +245,33 @@ main {
   display: flex;
   justify-content: center;
   gap: 90px;
-  height: 450px;
+  height: 20%;
+  padding-bottom: 80px;
   text-align: center;
 }
 
+.principal-features-level div:first-child {
+width: 37%;
+}
 .principal-features-level div:last-child {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
+  width: 30%;
 }
 
 .principal-features-level h3 {
-  font-size: 22px;
+  width: 100%;
 }
 
 .principal-features-level p {
   font-size: 17px;
-  width: 500px;
+  width: 100%;
 }
 
 .principal-features-level video {
-  width: 650px;
+  width: 100%;
 }
 
 /*-------->Estilos de la seccion características souls like*/
@@ -296,8 +321,8 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  width: 433px;
-  height: 450px;
+  width: 20%;
+  height: 20%;
 }
 
 .souls-like-level div:first-child,
@@ -318,8 +343,10 @@ main {
 .souls-like-level img,
 .souls-like-environmental-narrative img,
 .Methodical-Combat img {
-  width: 350px;
-  height: 250px;
+ 
+  width: 100%;
+  
+
 }
 
 /*----------------------Section Historia/*----------------------*/
@@ -344,7 +371,7 @@ main {
 }
 
 .history-box {
-  width: 1300px;
+  width: 70%;
   align-content: center;
   text-align: center;
   text-align: center;
@@ -400,7 +427,7 @@ li {
 
 .box-classes-text {
   align-content: center;
-  width: 1000px;
+  width: 60%;
   margin: 25px auto 0 auto;
   font-size: 17px;
   text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.5);
@@ -461,6 +488,8 @@ li {
 .sinluz-text {
   display: flex;
   flex-direction: column;
+  width: 70%;
+  align-items: center;
   gap: 25px;
 }
 
@@ -469,7 +498,7 @@ li {
 }
 
 .section-sinluz p {
-  width: 1200px;
+  width: 100%;
   font-size: 17px;
 }
 
